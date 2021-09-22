@@ -80,7 +80,7 @@ public class EventHandler implements RequestHandler<ScheduledEvent, String> {
                 break;
             }
             logger.log("waiting for file to be created " + summaryUpdateName);
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         }
         
         // Before we delete the shipment updates make sure the summary update file exists
@@ -137,7 +137,7 @@ public class EventHandler implements RequestHandler<ScheduledEvent, String> {
 
             //Add to list of processed files
             filesProcessed.add(new KeyVersion(summary.getKey()));
-            logger.log("logging file contents" + fileContents);
+            logger.log("logging Contents of the file" + fileContents);
         }
         return filesProcessed;
     }
