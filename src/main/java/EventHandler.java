@@ -137,7 +137,7 @@ public class EventHandler implements RequestHandler<ScheduledEvent, String> {
 
             //Add to list of processed files
             filesProcessed.add(new KeyVersion(summary.getKey()));
-            logger.log("logging Contents of the file" + fileContents);
+            logger.log("logging file contents" + fileContents);
         }
         return filesProcessed;
     }
